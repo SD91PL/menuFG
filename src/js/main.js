@@ -1,21 +1,21 @@
-let addBtn
+// let addBtn
 
-const main = () => {
-	prepareDOMElements()
-	prepareDOMEvents()
-}
+// const main = () => {
+// 	prepareDOMElements()
+// 	prepareDOMEvents()
+// }
 
-const prepareDOMElements = () => {
+// const prepareDOMElements = () => {
 
-	addBtn = document.querySelector('.btn-add')
-}
+// 	addBtn = document.querySelector('.btn-add')
+// }
 
-const prepareDOMEvents = () => {
-	addBtn.addEventListener('click', clickedBtn)
-}
+// const prepareDOMEvents = () => {
+// 	addBtn.addEventListener('click', clickedBtn)
+// }
 
-const clickedBtn = () => {
-    addBtn.classList.toggle('clicked')
-}
+// const clickedBtn = () => {
+//     addBtn.classList.toggle('clicked')
+// }
 
-document.addEventListener('DOMContentLoaded', main)
+// document.addEventListener('DOMContentLoaded', main)
