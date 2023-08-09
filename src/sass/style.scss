@@ -26,19 +26,19 @@ body {
 }
 
 //HEADER
-.logotype {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-	.brand-icon {
-		margin-bottom: -2px;
-		margin-right: 6px;
-		margin-left: 6px;
-		height: 2.5rem;
-		width: 2.5rem;
-	}
-}
 
 header {
+	.logotype {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		.brand-icon {
+			margin-bottom: -2px;
+			margin-right: 6px;
+			margin-left: 6px;
+			height: 2.5rem;
+			width: 2.5rem;
+		}
+	}
 	p {
 		a,
 		a::after,
