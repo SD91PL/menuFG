@@ -12,6 +12,61 @@
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	// justify-content: space-evenly;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 	background-color: #ddd;
-    font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.44;
+	text-align: center;
+}
+
+//HEADER
+.logotype {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	.brand-icon {
+		margin-bottom: -2px;
+		margin-right: 6px;
+		margin-left: 6px;
+		height: 2.5rem;
+		width: 2.5rem;
+	}
+}
+
+header {
+	p {
+		a,
+		a::after,
+		a::before {
+			transition: color 0.33s, height 0.33s;
+		}
+		a {
+			position: relative;
+			text-decoration: none;
+			font-weight: bold;
+			color: #000;
+			z-index: 0;
+		}
+		a::after {
+			content: '';
+			position: absolute;
+			bottom: -0.2rem;
+			left: 0;
+			height: 1px;
+			width: 100%;
+			background-color: #000;
+			z-index: -1;
+		}
+		a:hover {
+			color: #fff;
+		}
+		a:hover::after {
+			height: 115%;
+		}
+	}
 }
