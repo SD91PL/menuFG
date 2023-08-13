@@ -1,21 +1,28 @@
-// let addBtn
+let navInfo
+let def
+let bts
+let repo
+let mockup
 
-// const main = () => {
-// 	prepareDOMElements()
-// 	prepareDOMEvents()
-// }
+const main = () => {
+	prepareDOMElements()
+	prepareDOMEvents()
+}
 
-// const prepareDOMElements = () => {
+const prepareDOMElements = () => {
+	navInfo = document.querySelector('.nav-info')
+	def = document.querySelector('.default')
+	bts = document.querySelector('.bootstrap')
+	repo = document.querySelector('.repo')
+	mockup = document.querySelector('.mockup')
+}
 
-// 	addBtn = document.querySelector('.btn-add')
-// }
+const prepareDOMEvents = () => {
+	def.addEventListener('mouseover', hoverDef)
+}
 
-// const prepareDOMEvents = () => {
-// 	addBtn.addEventListener('click', clickedBtn)
-// }
+const hoverDef = () => {
+    console.log('test');
+}
 
-// const clickedBtn = () => {
-//     addBtn.classList.toggle('clicked')
-// }
-
-// document.addEventListener('DOMContentLoaded', main)
+document.addEventListener('DOMContentLoaded', main)
