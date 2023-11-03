@@ -17,7 +17,12 @@ body {
 	align-items: center;
 	flex-direction: column;
 	min-height: 100vh;
-	background-color: #eee;
+	background-color: #000;
+	color: #eee;
+	background-image: linear-gradient(60deg, #000000d5 0%, #00000081 100%),linear-gradient(319deg, #dcf26e81 0%, #61fa7386 37%, #1cfdd786 100%),
+		url('https://pixabay.com/get/g1e27c0db5dac769e0a45955cd0697ed417ae81d8d41c2d3273ebc4ccc3f9b5d7c1efb1a0f87da4c5884c2af39be44fda6f900abcbd8fe80b3822974f3dd48548_1920.jpg');
+	background-position: center;
+	background-size: cover;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
 	line-height: 1.44;
@@ -32,6 +37,10 @@ body {
 	flex-direction: column;
 	padding: 1rem 2rem;
 	height: 100%;
+}
+
+p, .logotype, .nav-info {
+	color: #eee;
 }
 
 //HEADER
@@ -52,13 +61,13 @@ header {
 		a,
 		a::after,
 		a::before {
-			transition: color 0.33s, height 0.33s;
+			transition: color 0.33s, height 0.33s, text-shadow 0.33s;
 		}
 		a {
 			position: relative;
 			text-decoration: none;
 			font-weight: bold;
-			color: #000;
+			color: #fff;
 			z-index: 0;
 		}
 		a::after {
@@ -68,11 +77,12 @@ header {
 			left: 0;
 			height: 1px;
 			width: 100%;
-			background-color: #000;
+			background-color: #fff;
 			z-index: -1;
 		}
 		a:hover {
-			color: #fff;
+			color: #000;
+			text-shadow: 0px 0px 0px #00000000;
 		}
 		a:hover::after {
 			height: 115%;
@@ -86,7 +96,8 @@ nav {
 	margin: 3rem auto;
 	width: 290px;
 	background-color: #fff;
-	box-shadow: 0px 5px 10px #00000050;
+	box-shadow: 0px 5px 10px #000000b0;
+	overflow: hidden;
 	ul {
 		list-style: none;
 		a {
@@ -116,8 +127,6 @@ nav {
 
 	.steps {
 		padding: 1em;
-		// border-bottom: 1px solid #000000;
-		// background-color: #f7f7f7;
 		background-color: #000;
 		color: #fff;
 		text-transform: uppercase;
